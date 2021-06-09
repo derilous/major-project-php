@@ -11,6 +11,11 @@
         <div>Announcement Settings</div>
 		<form id="registerForm" action="insertData.php" method="POST" enctype="multipart/form-data">
             <div>Add a new announcement:</div>
+            <select name="type">
+            <option value="1">Promotion</option>
+            <option value="2">Special Discount</option>
+            <option value="3">Event</option>
+            </select>
             <div>
             <input id="Title" name="Title" placeholder="Title" type="text" required>
             </div>
@@ -24,7 +29,7 @@
             <input id = "image" name="image" placeholder = "Add image link" >
             </div>
             <div>
-            <button type="submit" name = "upload">Add Announcement</button>
+            <button type="submit" name = "submitButton">Add Announcement</button>
             </div>
         </form>
 </body>
