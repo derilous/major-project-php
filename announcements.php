@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
     <title>Admin Controls</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/home.css">
 </head>
 <body>
 <?php include 'header-footer/header.php';?>

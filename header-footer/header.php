@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-    <title>Admin Controls</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/home.css">
     <style>
         body,html {
             margin:0;
@@ -12,18 +12,19 @@
         div.titlebarContainer {
             width: 100%;
             margin: 0;
-            height: fit-content;
+            height: 55px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             box-shadow: 0 8px 6px -6px black;
+            font-family: Arial, Helvetica;
         }
         
         div.home {
             color: #FF7F50;
             font-weight: 500;
             font-size: 24px;
-            margin: 0.5rem 1rem;
+            margin: 5px 10px;
             padding: 0.5rem;
             border-radius: 5px;
             width: fit-content;
@@ -42,38 +43,22 @@
             cursor: pointer;
         }
         img.gear {
-            width: 25px;
-            height: 24px;
-            padding:0.5rem;
+            width: 30px;
+            height: 30px;
+            padding:0.3rem;
             border-radius: 5px;
-            margin: 0 0.5rem;
+            margin: 0.5rem 0.5rem;
         }
         img.gear:hover {
             cursor: pointer;
             box-shadow: 0 0 11px rgba(33,33,33,.2);
         }
-        
-        div.buttonAuth {
-            display:inline-block;
-            padding:0.46em 1.6em;
-            border:0.1em solid #000000;
-            margin:0 0.2em 0.2em 0;
-            border-radius:0.12em;
-            box-sizing: border-box;
-            text-decoration:none;
-            font-family:'Roboto',sans-serif;
-            font-weight:300;
-            color:#000000;
-            text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
-            background-color:#FF8C00;
-            text-align:center;
-            transition: all 0.15s;
+
+        div.leftSide {
+            display: flex;
+            justify-content: flex-start;
         }
-        div.buttonAuth:hover {
-            text-shadow: 0 0 2em rgba(255,255,255,1);
-            color:#FFFFFF;
-            border-color:#FFFFFF;
-        }
+
         div.button {
             pointer-events: auto;
 	        cursor: pointer;
@@ -92,17 +77,54 @@
             transition: 0.2s;
             background: #FF8C00;
         }
+
+        .topnav {
+            background-color: transparent;
+            overflow: hidden;
+            font-family: Arial, Helvetica;
+        }
+
+
+        /* Style the links inside the navigation bar */
+        .topnav div {
+            float: left;
+             color: #FF8C00;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        /* Change the color of links on hover */
+        .topnav div:hover {
+            background-color: #FF8C00;
+            color: black;
+        }
+
+        /* Add a color to the active/current link */
+        .topnav div.active {
+            background-color: #FF8C00;
+            color: white;
+        }
     </style>
 </head>
 <body>
     <div class="titlebarContainer">
-        <div class = "home" onClick = "home()">
-            Xtitan Ecomm
+        <div class="leftSide">
+            <div class = "home" onClick = "home()">
+                Xtitan Ecomm
+            </div>
+            <div class="topnav">
+	            <div onClick="announcements()" style = "cursor: pointer">Announcements</div>
+	            <div >Contact</div>
+	            <div >About</div>
+	        </div>
         </div>
         <div class="options">
         <img src="https://icon-library.com/images/gear-icon-svg/gear-icon-svg-15.jpg" class="gear" onClick="announcementSettings()">
         <div class= "button" onClick="register()">Log In</div>
         </div>
+        
     </div>
     <script>
         function home() {
@@ -114,6 +136,9 @@
         }
         function register(){
             window.location.href="/major-project-php/register.php";
+        }
+        function announcements(){
+            window.location.href="/major-project-php/announcements.php";
         }
     </script>
 </body>
