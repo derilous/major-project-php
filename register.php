@@ -65,6 +65,7 @@
 		</p>
 
 		<p>
+			<?php echo $account->getError(Constants::$emailTaken); ?>
 			<?php echo $account->getError(Constants::$emailsDoNotMatch); ?>
 			<?php echo $account->getError(Constants::$emailInvalid); ?>
 			<label for="email">Email</label>
