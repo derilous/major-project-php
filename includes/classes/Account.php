@@ -34,8 +34,10 @@
 
 		private function insertUserDetails($fn, $ln, $em, $pw) {
 			
-			$result = mysqli_query($this->con, "INSERT INTO Users (first_name, last_name, email, password) VALUES ( '$fn', '$ln', '$em', '$pw')");
-			echo "Error: " . mysqli_error($this->con);
+			$result = mysqli_query($this->con, "INSERT INTO users (first_name, last_name, email, password) VALUES ( '$fn', '$ln', '$em', '$pw')");
+			if(mysqli_error($this->con)){
+				echo "Connection error ";
+			}
 
 		}
 
