@@ -24,7 +24,7 @@ body {
     height: 400px;
 }
 
-#anouncementTitle * {
+#announcementTitle * {
 	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	color: #FF8C00;
 	font-weight: bold;
@@ -32,7 +32,7 @@ body {
 	box-sizing: border-box;
 }
 
-#anouncementTitle {
+#announcementTitle {
 
 	width: 80%;
 	margin: 0 auto;
@@ -40,3 +40,29 @@ body {
 
 }
 
+#inputContainer {
+	width: 500px;
+    padding: 45px;
+    float: left;
+    border-right: 1px solid #999;
+}
+
+#inputContainer input[type="text"]  {
+	display: block;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    height: 27px;
+    line-height: 27px;
+    width: 100%;
+}
+
+#deleteContainer input[type="text"]  {
+	display: block;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    height: 27px;
+    line-height: 27px;
+    width: 100%;
+}
