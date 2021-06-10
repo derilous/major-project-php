@@ -3,4 +3,46 @@ body{
   padding:  0;
   margin:  0;
   height: 100%;
+<<<<<<< Updated upstream
+=======
+}
+
+
+.topnav {
+  background-color: transparent;
+  overflow: hidden;
+}
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #FF8C00;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #FF8C00;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #FF8C00;
+  color: white;
+}
+
+#background {
+  background-color: #000;
+    background-image: url(../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: table;
+    height: 100%;
+    width: 100%;
+>>>>>>> Stashed changes
 }

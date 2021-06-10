@@ -1,0 +1,42 @@
+html,
+body {
+
+	padding:  0;
+	margin:  0;
+	height: 100%;
+}
+
+#background {
+	background-color: #fff;
+    background-image: url(../images/bg2.jpg);
+    background-position: center;
+    background-size: cover;
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+#inputContainer  {
+	float: left;
+    padding: 45px;
+    border-right: 1px solid. #999;
+    width: 400px;
+    height: 400px;
+}
+
+#anouncementTitle * {
+	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	color: #FF8C00;
+	font-weight: bold;
+	line-height: 1em;
+	box-sizing: border-box;
+}
+
+#anouncementTitle {
+
+	width: 80%;
+	margin: 0 auto;
+	font-size: 33px;
+
+}
+

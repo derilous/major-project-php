@@ -6,7 +6,17 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/home.css">
 </head>
 <body>
+
 <?php include 'header-footer/header.php';?>
+<<<<<<< Updated upstream
+=======
+	<div class="topnav">
+	  <a class="active" href="#home">Home</a>
+	  <a href="#annnoucments">Announcements</a>
+	  <a href="#product">Product</a>
+	  <a href="#about">About</a>
+	</div>
+>>>>>>> Stashed changes
 
 <?php
 //index.php
@@ -82,7 +92,7 @@ function make_slides($connect)
  <body>
   <br />
   <div class="container">
-   <h2 align="center">X Titan E-Comm</h2>
+   <h2 align="center">Best Selling Products</h2>
    <br />
    <div id="dynamic_slide_show" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
