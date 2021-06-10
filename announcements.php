@@ -7,7 +7,7 @@
 <body>
 <?php include 'header-footer/header.php';?>
 	<div id="inputContainer">
-        <div>Announcement Settings</div>
+        <div>Announcements</div>
 		<form id="addAnnouncement" action="insertData.php" method="POST" enctype="multipart/form-data">
             <div>Add a new announcement:</div>
             <select name="type">

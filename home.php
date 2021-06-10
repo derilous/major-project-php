@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/home.css">
 </head>
 <body>
+<?php include 'header-footer/header.php';?>
 	<div class="topnav">
 	  <a class="active" href="#home">Home</a>
 	  <a href="#news">News</a>
