@@ -9,6 +9,23 @@
 			$this->errorArray = array();
 		}
 
+		public function login($un, $pw) {
+
+			$query = mysqli_query($this->con, "SELECT * FROM users WHERE username='$un' AND password='$pw'");
+
+			if(mysqli_num_rows($query) == 1) {
+				return true;
+			}
+			else {
+				array_push($this->errorArray, Constants::$loginFailed);
+				return false;
+			}
+
+		}
+
+		//check if triggering
+
+
 		public function register($fn, $ln, $em, $em2, $pw, $pw2) {
 			$this->validateFirstName($fn);
 			$this->validateLastName($ln);
@@ -32,16 +49,13 @@
 			return "<span class='errorMessage'>$error</span>";
 		}
 
-		private function insertUserDetails($fn, $ln, $em, $pw) {
-			
+		private function insertUserDetails($fn, $ln, $em, $pw) {	
 			$result = mysqli_query($this->con, "INSERT INTO users (first_name, last_name, email, password) VALUES ( '$fn', '$ln', '$em', '$pw')");
 			if(mysqli_error($this->con)){
 				echo "Connection error ";
 			}
 
 		}
-
-
 
 		private function validateFirstName($fn) {
 			if(strlen($fn) > 25 || strlen($fn) < 2) {
@@ -68,12 +82,12 @@
 				return;
 			}
 
-			$checkEmailQuery = mysqli_query($this->con, "SELECT email FROM users WHERE email='$em'");
+			$checkEmailQuery = mysqli_query($this->con, "SELECT email FROM Users WHERE email='$em'");
 			if(mysqli_num_rows($checkEmailQuery)!=0) {
 				array_push($this->errorArray, Constants::$emailTaken);
 				return;
 			}
-			//TODO: Check that username hasn't already been used
+			//COMEBACK: Check that emailQuery is triggering
 
 		}
 
