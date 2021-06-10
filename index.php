@@ -19,10 +19,14 @@ else {
 	<title>Hello World</title>
 </head>
 <body>
-
-	<?php
-echo "hello motherfucker";
-	?>
-
+	<div>
+		<div class="topnav">
+	  <a class="active" href="#home">Home</a>
+	  <a href="#news">News</a>
+	  <a href="#contact">Contact</a>
+	  <a href="#about">About</a>
+</div>
+		
+	</div>
 </body>
 </html>
