@@ -8,16 +8,6 @@
 <body>
 
 <?php include 'header-footer/header.php';?>
-<<<<<<< Updated upstream
-=======
-	<div class="topnav">
-	  <a class="active" href="#home">Home</a>
-	  <a href="#annnoucments">Announcements</a>
-	  <a href="#product">Product</a>
-	  <a href="#about">About</a>
-	</div>
->>>>>>> Stashed changes
-
 <?php
 //index.php
 $connect = mysqli_connect("localhost", "root", "", "testing");
