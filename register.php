@@ -1,4 +1,5 @@
 <?php
+	include("header-footer/header.php");
 	include("includes/config.php");
 	include("includes/classes/Account.php");
 	include("includes/classes/Constants.php");

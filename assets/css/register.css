@@ -115,9 +115,8 @@ body {
 }
 
 #loginText {
-	padding: 58px;
-    margin: -35;
-    float: right;
+	padding: 0px;
+    margin: 155;
     }
 
 #loginText h1 {
@@ -149,3 +148,4 @@ body {
     font-size: 12px;
     display: block;
 }
+
