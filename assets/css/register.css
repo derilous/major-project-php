@@ -28,12 +28,12 @@ body {
     margin: 200px 250px;
 	position: relative
 	max-width: 1024px;
-	display: flex;
-    flex-direction: column-reverse;
-    width: 70%;
-    margin: 50px 230px;
+        width: 70%;
+    margin: 0px 223px
+
 }
-}
+
+
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:    #a0a0a0;
