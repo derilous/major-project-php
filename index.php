@@ -5,7 +5,9 @@
 <head>
 	<meta charset="utf-8">
     <title>XTitan E-comm</title>
+    <h1> Best Sellers</h1>
 	<style>
+
 	body{
 		margin: 1rem 0.5rem;
 		font-family: Apercu Arial,sans-serif;
@@ -114,6 +116,9 @@
 	</style>
 </head>
 <body>
+
+	
+
 	<div class = "container">
 		<div class="HeroC100">
 			<div class="Hero50Text" style="background-color: #6e3507; color:#fff; padding: 1rem;">
@@ -121,6 +126,21 @@
 			</div>
 			<div class="Hero50Text" style="background-color: #1f3d0c; color:#fff; padding: 1rem;">
 				MCO with XTitan: Your Stay-At-Home Starter Kit
+			</div>
+			<div class="w3-card-4">
+  				<img src="assets/images/carouselart/banner-1.jpg" alt="Person">
+			</div>
+			<div class="w3-card-4">
+  				<img src="assets/images/carouselart/banner-2.jpg" alt="Person">
+			</div>
+			<div class="w3-card-4">
+  				<img src="assets/images/carouselart/banner-3.jpg" alt="Person">
+			</div>
+			<div class="w3-card-4">
+  				<img src="assets/images/carouselart/banner-4.jpg" alt="Person">
+			</div>
+			<div class="w3-card-4">
+  				<img src="assets/images/carouselart/banner-5.jpg" alt="Person">
 			</div>
 		</div>
 	<div>

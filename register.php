@@ -55,7 +55,7 @@
 	<div id="background">
 
 		<div  id="loginContainer">
-					<div id="loginText">
+				<div id="loginText">
 					<h1>X TITAN</h1>
 					<h2>The world's catalog right to your doorstep</h2>
 

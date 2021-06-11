@@ -129,7 +129,7 @@
     </div>
     <script>
         function home() {
-        window.location.href="/major-project-php/home.php";
+        window.location.href="/major-project-php/index.php";
         }
 
         function announcementSettings(){
