@@ -2,13 +2,13 @@
 
 if (isset($_POST['loginButton'])) {
 	// login button is pressed
-	$username = $_POST['loginUsername'];
+	$email = $_POST['loginEmail'];
 	$password = $_POST['loginPassword'];
 
-	$result = $account->login($username, $password);
+	$result = $account->login($email, $password);
 
-	if($result) {
-		$_SESSION['userLoggedIn'] = $username;
+	if($result == true) {
+		$_SESSION['userLoggedIn'] = $email;
 		header("Location: index.php");
 	}
 

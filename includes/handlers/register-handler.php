@@ -26,7 +26,7 @@ if (isset($_POST['registerButton'])){
 	$wasSuccessful = $account->register($firstName, $lastName, $email, $email2, $password, $password2);
 
 	if($wasSuccessful == true) {
-		$_SESSION['userLoggedIn'] = $username;
+		$_SESSION['userLoggedIn'] = $email;
 		header("Location: index.php");
 	}
 

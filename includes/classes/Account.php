@@ -9,9 +9,9 @@
 			$this->errorArray = array();
 		}
 
-		public function login($un, $pw) {
+		public function login($em, $pw) {
 
-			$query = mysqli_query($this->con, "SELECT * FROM users WHERE username='$un' AND password='$pw'");
+			$query = mysqli_query($this->con, "SELECT * FROM users WHERE email='$em' AND password='$pw'");
 
 			if(mysqli_num_rows($query) == 1) {
 				return true;
@@ -87,7 +87,7 @@
 				array_push($this->errorArray, Constants::$emailTaken);
 				return;
 			}
-			//COMEBACK: Check that emailQuery is triggering
+			
 
 		}
 

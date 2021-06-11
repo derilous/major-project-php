@@ -67,6 +67,7 @@
 				</p>
 					
 				<p>
+					<?php echo $account->getError(Constants::$loginFailed); ?>
 					<label for="loginPassword">Password</label>
 					<input  id="loginPassword" name="loginPassword" type="password" placeholder="Your Password"  required>
 				</p>
@@ -145,14 +146,12 @@
 			<div id="loginText">
 				<h1>X TITAN</h1>
 				<h2>The world's catalog right to your doorstep</h2>
-				<ul>
-					<li>Discover the best products around you</li>
-					<li>Weekly discounts & special promotions</li>
-					<li>Up to 90% discount during special shopping events </li>
-				</ul>
+
 			</div>
 
 		</div>
 	</div>		
 </body>
 </html>
+
+<?php include 'header-footer/footer.php';?>

@@ -28,6 +28,11 @@ body {
     margin: 200px 250px;
 	position: relative
 	max-width: 1024px;
+	display: flex;
+    flex-direction: column-reverse;
+    width: 70%;
+    margin: 50px 230px;
+}
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
@@ -99,6 +104,8 @@ body {
 	cursor: pointer;
 
 }
+
+
 
 .hasAccountText span {
 	font-weight: bold;
