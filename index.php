@@ -5,7 +5,6 @@
 <head>
 	<meta charset="utf-8">
     <title>XTitan E-comm</title>
-    <h1> Best Sellers</h1>
 	<style>
 
 	body{
@@ -133,6 +132,7 @@
 	img.hero75:hover{
 		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	}
+	/* css stylesheet skeleton for the page */
 
 
 	</style>
@@ -146,14 +146,17 @@
 			<div class="Hero50Text" style="background-color: #1f3d0c; color:#fff; padding: 1rem;">
 				MCO with XTitan: Your Stay-At-Home Starter Kit
 			</div>
+			<!-- Loading hero buttons -->
 		</div>
 		<div class ="HeroC100">
-		<img class ="hero25" src ="https://c8.alamy.com/compes/tbtm1w/colorido-brillante-orientales-boho-handdrawn-ogee-promocion-banner-cuadrado-india-campana-publicitaria-de-recuerdos-de-moda-de-diseno-graficos-de-medios-sociales-perfecto-para-b-tbtm1w.jpg" style="height: 400px;">
-		<img class ="hero75" src ="https://image.freepik.com/free-vector/promotion-fashion-banner_1188-144.jpg" style="height: 400px;">
+			<img class ="hero25" src ="https://c8.alamy.com/compes/tbtm1w/colorido-brillante-orientales-boho-handdrawn-ogee-promocion-banner-cuadrado-india-campana-publicitaria-de-recuerdos-de-moda-de-diseno-graficos-de-medios-sociales-perfecto-para-b-tbtm1w.jpg" style="height: 400px;">
+			<img class ="hero75" src ="https://image.freepik.com/free-vector/promotion-fashion-banner_1188-144.jpg" style="height: 400px;">
+		
 		</div>
 		<div class="HeroC100">
-		<img class="hero100" src="https://img.ltwebstatic.com/images3_ach/2021/06/02/1622613177c0ec5c363150373efac965fcc41c2fde.webp">
+			<img class="hero100" src="https://img.ltwebstatic.com/images3_ach/2021/06/02/1622613177c0ec5c363150373efac965fcc41c2fde.webp">
 		<div>
+		<!-- imgage content for the site -->
 	<div>
 </body>
 </html>

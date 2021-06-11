@@ -110,6 +110,7 @@
                                     </div>
                                 </div>
                         <?php $i++; } ?>
+                        <!-- Selecting and retriving announcement from promotion table and displaying content as element -->
                 </div>
                 <div class="announcementHeader">Special Discounts</div>
                 <div class = "announcementRow">
@@ -142,6 +143,7 @@
                                     </div>
                                 </div>
                         <?php $i++; } ?>
+                        <!-- Selecting and retriving announcement from discount table and displaying content as element -->
                     </div>
                     <div class="announcementHeader">Events</div>
                 <div class = "announcementRow">
@@ -174,6 +176,7 @@
                                     </div>
                                 </div>
                         <?php $i++; } ?>
+                        <!-- Selecting and retriving announcement from promotion table and displaying content as element -->
                     </div>
                 </div>
             </div>

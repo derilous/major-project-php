@@ -6,6 +6,7 @@
 	<meta charset="utf-8">
     <title>Admin Controls</title>
         <link rel="stylesheet" type="text/css" href="assets/css/announcementSettings.css">
+        <!-- Accessing stylesheet for information -->
 </head>
 <body>
 
@@ -20,7 +21,8 @@
                                 <option value="1">Promotion</option>
                                 <option value="2">Special Discount</option>
                                 <option value="3">Event</option>
-                                    </select>
+                                <!-- value selects which table to add to -->
+                            </select>
                         <div>
                             <input id="Title" name="Title" placeholder="Title" type="text" required>
                         </div>
@@ -35,6 +37,7 @@
                         </div>
                         <div>
                              <button type="submit" name = "submitButton">ADD</button>
+                             <!-- connecting to database and creating new unique accouncement -->
                         </div>
                     </form>
                     <p>
@@ -51,6 +54,7 @@
                             <input id ="id" name = "id" placeholder = "Announcement ID" type="text" required>
                             <button type="submit" name = "submitDelete">REMOVE</button>
                         </div>
+                        <!-- delete announcement form -->
                 </div>
                 </div>
         </div>
