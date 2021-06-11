@@ -89,26 +89,90 @@
 
                         $conn =mysqli_connect ($server , $username , $password , $dbname);
                         $fetchPromotions = "select title, period, description, photo from promotions";
-                        $result = mysqli_query($conn,$fetchPromotions);
-                        $rows = mysqli_fetch_array($result, MYSQLI_ASSOC);
+                        $result = mysqli_query($conn, $fetchPromotions);
+                        $rows = mysqli_fetch_assoc($result);
+                        
                         foreach($rows as $row) {
-                            ?> 
-                            <div class='announcementHero'>
-                                <div>
-                                    <img src="<?=$row['photo'];?>" class='annPhoto'>;
+                            ?> <div class='announcementHero'>
+                                    <div>
+                                        <img src="<?php echo $rows['photo'];?>" class='annPhoto'>;
+                                    </div>
+                                    <div class='heroText'>
+                                        <div class='heroTitle'>
+                                        <?php echo $rows['title'];?>
+                                        </div>
+                                        <div class='heroPeriod'>
+                                        <?php echo $rows['period'];?>
+                                        </div>
+                                        <div class = 'heroDescription'>
+                                        <?php echo $rows['description'];?>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class='heroText'>
-                                    <div class='heroTitle'>
-                                        30% off today
+                    <?php } ?>
+                </div>
+                <div class="announcementHeader">Special Discounts</div>
+                <div class = "announcementRow">
+                        <?php
+                        $server = "localhost";
+                        $username = "root";
+                        $password = "";
+                        $dbname = "xtitan-announcement-project";
+
+                        $conn =mysqli_connect ($server , $username , $password , $dbname);
+                        $fetchDiscount = "select title, period, description, photo from discount";
+                        $result = mysqli_query($conn, $fetchDiscount);
+                        $rows = mysqli_fetch_assoc($result);
+                        
+                        foreach($rows as $row) {
+                            ?> <div class='announcementHero'>
+                                    <div>
+                                        <img src="<?php echo $rows['photo'];?>" class='annPhoto'>;
                                     </div>
-                                    <div class='heroPeriod'>
-                                        18-20th Oct 2021
-                                    </div>
-                                    <div class = 'heroDescription'>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    <div class='heroText'>
+                                        <div class='heroTitle'>
+                                        <?php echo $rows['title'];?>
+                                        </div>
+                                        <div class='heroPeriod'>
+                                        <?php echo $rows['period'];?>
+                                        </div>
+                                        <div class = 'heroDescription'>
+                                        <?php echo $rows['description'];?>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                        <?php } ?>
+                    </div>
+                    <div class="announcementHeader">Events</div>
+                <div class = "announcementRow">
+                        <?php
+                        $server = "localhost";
+                        $username = "root";
+                        $password = "";
+                        $dbname = "xtitan-announcement-project";
+
+                        $conn =mysqli_connect ($server , $username , $password , $dbname);
+                        $fetchDiscount = "select title, period, description, photo from events";
+                        $result = mysqli_query($conn, $fetchDiscount);
+                        $rows = mysqli_fetch_assoc($result);
+                        
+                        foreach($rows as $row) {
+                            ?> <div class='announcementHero'>
+                                    <div>
+                                        <img src="<?php echo $rows['photo'];?>" class='annPhoto'>;
+                                    </div>
+                                    <div class='heroText'>
+                                        <div class='heroTitle'>
+                                        <?php echo $rows['title'];?>
+                                        </div>
+                                        <div class='heroPeriod'>
+                                        <?php echo $rows['period'];?>
+                                        </div>
+                                        <div class = 'heroDescription'>
+                                        <?php echo $rows['description'];?>
+                                        </div>
+                                    </div>
+                                </div>
                         <?php } ?>
                     </div>
                 </div>
