@@ -1,4 +1,5 @@
 <?php
+//this where classes,handlers and  heaaders are calleed upon using the include command.
 	include("header-footer/header.php");
 	include("includes/config.php");
 	include("includes/classes/Account.php");
@@ -22,12 +23,12 @@
 	<meta charset="utf-8">
 	<title>X TITAN</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/register.css">
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="assets/js/register.js"></script>
 </head>
 </head>
 <body>
+
 	<?php
 
 	if(isset($_POST['registerButton'])) {
@@ -50,8 +51,6 @@
 	?>
 
 
-
-
 	<div id="background">
 
 		<div  id="loginContainer">
@@ -65,6 +64,7 @@
 				<form id="loginForm" action="register.php">
 					<h2>Login To Your Account</h2> 
 				<p>
+					
 					<?php echo $account->getError(Constants::$loginFailed); ?>
 					<label for="loginEmail">Email</label>
 					<input  id="loginEmail" name="loginEmail" type="text"  placeholder="e.g mohsin55@gmail.com" value="<?php getInputValue('loginEmail') ?>"  required>
@@ -94,6 +94,7 @@
 				
 
 				<p>
+				
 					<?php echo $account->getError(Constants::$firstNameCharacters); ?>
 					<label for="firstName">First Name</label>
 					<input  id="firstName" name="firstName" type="text"  placeholder="e.g Mohsin" required>
@@ -101,7 +102,7 @@
 				</p>
 
 				<p>
-					<?php echo $account->getError(Constants::$lastNameCharacters); ?>
+
 					<label for="lastName">Last Name</label>
 					<input  id="lastName" name="lastName" type="text"  placeholder="e.g Habiya" required>
 
@@ -156,5 +157,5 @@
 	</div>		
 </body>
 </html>
-
+//footer is included in all pages
 <?php include 'header-footer/footer.php';?>
