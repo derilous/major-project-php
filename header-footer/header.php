@@ -14,6 +14,7 @@
             margin: 0;
             height: 55px;
             display: flex;
+            position: relative;
             justify-content: space-between;
             align-items: center;
             box-shadow: 0 8px 6px -6px black;
