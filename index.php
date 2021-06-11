@@ -61,6 +61,54 @@
 	div.hero75:hover{
 		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	}
+	img.HeroC100{
+		margin: 1rem 0.5rem;
+		display: flex;
+		width: 100%;
+		justify-content:center;
+		align-items: center;
+	}
+	img.Hero50Text{
+		width: 40%;
+		margin: 0.5rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: 0.2s;
+		cursor: pointer;
+	}
+	img.Hero50{
+		width: 40%;
+		margin: 0.5rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: 0.2s;
+		cursor: pointer;
+	}
+
+	img.hero25{
+		width: 20%;
+		margin 0.5rem;
+		transition: 0.2s;
+		cursor: pointer;
+	}
+	img.hero75{
+		width: 20%;
+		margin 0.5rem;
+		transition: 0.2s;
+	}
+	img.Hero50Text:hover{
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+		border-color: #000;
+	}
+
+	img.hero25:hover{
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	}
+	img.hero75:hover{
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	}
 
 
 	</style>
