@@ -1,3 +1,5 @@
+//register.php page pulls this  java script  to  runn  show/hide effect o
+
 $(document).ready(function() {
 
 
