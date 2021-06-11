@@ -88,11 +88,11 @@
                         $dbname = "xtitan-announcement-project";
 
                         $conn =mysqli_connect ($server , $username , $password , $dbname);
-                        $fetchPromotions = "select title, period, description, photo from promotions";
-                        $result = mysqli_query($conn, $fetchPromotions);
+                        $fetchDiscount = "select title, period, description, photo from promotions";
+                        $result = mysqli_query($conn, $fetchDiscount);
                         $rows = mysqli_fetch_assoc($result);
-                        
-                        foreach($rows as $row) {
+                        $i=1;
+                        for ($i = 0; $i <= 1; $i++){
                             ?> <div class='announcementHero'>
                                     <div>
                                         <img src="<?php echo $rows['photo'];?>" class='annPhoto'>;
@@ -109,11 +109,11 @@
                                         </div>
                                     </div>
                                 </div>
-                    <?php } ?>
+                        <?php $i++; } ?>
                 </div>
                 <div class="announcementHeader">Special Discounts</div>
                 <div class = "announcementRow">
-                        <?php
+                <?php
                         $server = "localhost";
                         $username = "root";
                         $password = "";
@@ -123,8 +123,8 @@
                         $fetchDiscount = "select title, period, description, photo from discount";
                         $result = mysqli_query($conn, $fetchDiscount);
                         $rows = mysqli_fetch_assoc($result);
-                        
-                        foreach($rows as $row) {
+                        $i=1;
+                        for ($i = 0; $i <= 1; $i++){
                             ?> <div class='announcementHero'>
                                     <div>
                                         <img src="<?php echo $rows['photo'];?>" class='annPhoto'>;
@@ -141,7 +141,7 @@
                                         </div>
                                     </div>
                                 </div>
-                        <?php } ?>
+                        <?php $i++; } ?>
                     </div>
                     <div class="announcementHeader">Events</div>
                 <div class = "announcementRow">
@@ -155,8 +155,8 @@
                         $fetchDiscount = "select title, period, description, photo from events";
                         $result = mysqli_query($conn, $fetchDiscount);
                         $rows = mysqli_fetch_assoc($result);
-                        
-                        foreach($rows as $row) {
+                        $i=1;
+                        for ($i = 0; $i <= 1; $i++){
                             ?> <div class='announcementHero'>
                                     <div>
                                         <img src="<?php echo $rows['photo'];?>" class='annPhoto'>;
@@ -173,7 +173,7 @@
                                         </div>
                                     </div>
                                 </div>
-                        <?php } ?>
+                        <?php $i++; } ?>
                     </div>
                 </div>
             </div>
