@@ -1,5 +1,5 @@
 <?php include 'header-footer/header.php';?>
-
+<?php include 'deleteAnnouncement.php';?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -50,7 +50,7 @@
                             <br>
                             <input id ="id" name = "id" placeholder = "Announcement ID" type="text" required>
                             <button type="submit" name = "submitDelete">REMOVE</button>
-                        <div/>
+                        </div>
                 </div>
                 </div>
         </div>

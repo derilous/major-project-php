@@ -18,7 +18,7 @@
 </Head>  
 <Body>  
 <div class="footer">  
-@Copyright nik&mohsin2021- All Right Reserved.   
+@Copyright 2021. Developed by Nik and Mohsin
 </div>  
 </Body>  
 </Html>  

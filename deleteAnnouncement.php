@@ -13,39 +13,32 @@ if(isset($_POST['submitDelete'])){
         $id = $_POST ['id'];
         $queryDelete = "delete from promotions where id = $id;";
         
-        if (mysqli_query($conn, $queryDelete)) {
-            echo "passed";
-           } else {
-            echo "Error: " . $queryDelete . "<br>" . mysqli_error($conn);
-           }
+        if ($conn->query($id)==TRUE && $con->affected_rows > 0) {
+            echo " record deleted";
+        } else {
+            echo "Error: " . $id . "<br>" . $conn->error;
+        }
 }
 
 elseif ($value == "2"){
     $id = $_POST ['id'];
-    $queryDelete = "delete from discount where id = $id;";
-    
-    if (mysqli_query($conn, $queryDelete)) {
-           if (mysqli_query($conn, $queryDelete)) {
-            echo "New record created successfully. Last inserted ID is: " . $rows;
-           } else {
-            echo "Error: " . $queryDelete . "<br>" . mysqli_error($conn);
-           }} else {
-        echo "Error: " . $queryDelete . "<br>" . mysqli_error($conn);
-       }
-    mysqli_close($conn);
-}
+        $queryDelete = "delete from discount where id = $id;";
+        
+        if ($conn->query($id)==TRUE && $conn->affected_rows > 0) {
+            echo " record deleted";
+        } else {
+            echo "Error: " . $id . "<br>" . $conn->error;
+        }
+        }
 elseif ($value=="3"){
     $id = $_POST ['id'];
-    $queryDelete = "delete from events where id = $id;";
-    
-    if (mysqli_query($conn, $queryDelete)) {
-        $rows = mysqli_stmt_affected_rows($conn);
-        echo "New record created successfully. Last inserted ID is: " . $rows;
-       } else {
-        echo "Error: " . $queryDelete . "<br>" . mysqli_error($conn);
-       }
-
-    mysqli_close($conn);
+        $queryDelete = "delete from events where id = $id;";
+        
+        if ($conn->query($id)==TRUE && $conn->affected_rows > 0) {
+            echo " record deleted";
+        } else {
+            echo "Error: " . $id . "<br>" . $conn->error;
+        }
 }
 }  
 // console.log($run);
